@@ -1,0 +1,295 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url("../public/fonts/Punk Typewriter.otf");
+}
+
+body {
+  font-family: "CustomFont", sans-serif;
+  font-size: 50px;
+  background: url("../public/images/background.gif");
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 130px;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  font-size: 60px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: grey;
+  transition-duration: 300ms;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  /* background-color: red; */
+  align-items: center;
+  padding: 15px 60px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100px;
+  align-items: end;
+  list-style-type: none;
+  /* padding-left: -50px; */
+}
+
+.nav-links-wrapper {
+  width: 30%;
+}
+
+.mint {
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  height: 400px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.connect-wallet-msg {
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  height: 200px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.num-mints {
+  font-size: 80px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.plus-button {
+  margin-left: 0;
+  font-size: 80px;
+}
+
+.minus-button {
+  margin-left: 0;
+  font-size: 80px;
+}
+
+.mint-btn {
+  font-size: 70px;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.mint-btn:hover {
+  text-align: center;
+  font-size: 80px;
+  transition-duration: 200ms;
+}
+.hero {
+  /* background-color: red; */
+  width: 600px;
+  margin-left: 15%;
+  margin-top: 180px;
+  font-size: 90px;
+  text-align: end;
+}
+
+.dashboard-btn {
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.go-to-span {
+  margin-right: 15px;
+}
+
+footer img {
+  width: 80px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+footer img:hover {
+  border-radius: 10px;
+  transition-duration: 200ms;
+  width: 85px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  margin-left: 70px;
+}
+
+button:hover {
+  color: grey;
+  transition-duration: 300ms;
+}
+
+.connect-wallet-msg-btn{
+  margin-left: 10px;
+}
+
+.disconnect-wallet{
+  margin-left: 60px;
+  font-size: 40px;
+}
+
+.mobile-connect-wallet-btn{
+  margin-left: 0;
+  visibility: hidden;
+}
+
+.eth-balance{
+  text-align: center;
+  font-size: 40px;
+}
+
+.conn-wallet{
+  text-align: center;
+  font-size: 40px;
+}
+
+
+
+@media (max-width: 900px) {
+  body {
+    background: url("../public/images/background-mobile.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+  }
+  .eth-balance{
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .conn-wallet{
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .disconnect-wallet{
+    margin-left: 0;
+    font-size: 30px;
+  }
+
+  img {
+    width: 80px;
+  }
+
+  .logo {
+    margin-left: 50%;
+    display: flex;
+    gap: 10px;
+    font-size: 40px;
+  }
+
+  .account-info{
+    font-size: 30px;
+  }
+
+  .mobile-connect-wallet-btn{
+    margin-left: 0;
+    visibility: visible;
+  }
+
+  .nav-connect-wallet-btn{
+    visibility: hidden;
+  }
+
+  .mint-btn{
+    font-size: 50px;
+  }
+
+  .nav-links{
+    visibility: hidden;
+  }
+  .mint {
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    height: 400px;
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .connect-wallet-msg {
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    height: 200px;
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .account-info{
+    visibility: hidden;
+  }
+
+  footer img {
+    width: 50px;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  
+  footer img:hover {
+    border-radius: 10px;
+    transition-duration: 200ms;
+    width: 55px;
+  }
+
+  .mint-btn:hover {
+    text-align: center;
+    font-size: 55px;
+    transition-duration: 200ms;
+  }
+}
